@@ -4,8 +4,9 @@ class ItemAdder extends React.Component {
   state = { item: "", Due: "" };
 
   manageSubmit = event => {
+    const {item, Due} = this.state
     event.preventDefault();
-    this.props.addItem(this.state);
+    this.props.addItem({item, Due: new Date(Due)});
     this.setState({ item: "", Due: "" });
   };
   handleChange = event => {
@@ -28,7 +29,7 @@ class ItemAdder extends React.Component {
         <input
           value={Due}
           id="Due"
-          type="text"
+          type="date"
           onChange={this.handleChange}
         ></input>
         <button>Add Item</button>
