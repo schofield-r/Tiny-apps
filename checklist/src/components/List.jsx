@@ -6,7 +6,7 @@ const List = props =>{
     //const sorted = items.sort((a, b) => { return a.Due - b.Due})
 
     return(
-        <ul>
+        <ul className='App-list'>
           {items.map(item => {
               return(
                   <li key = {item.item}>

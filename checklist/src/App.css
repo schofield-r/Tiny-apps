@@ -1,25 +1,56 @@
-
 .App {
   text-align: center;
-  background-color: #020202;
-  color: yellow;
+  background-color: #5c6061;
+  color: rgb(0, 255, 149);
+  font-family:monospace
 }
-
 .App-logo {
   height: 40vmin;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-color: rgb(53, 56, 56);
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(192, 200, 201);
+  font-family: inherit;
+  font-weight: bolder;
+
+  
 }
 
-.App-link {
-  color: #09d3ac;
+.App-list {
+  color: #afc5c1;
+  background-color: rgb(53, 56, 56);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: x-small;
+  font-family: monospace;
+}
+
+.App-itemsubmit {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  align-items: flex-end;
+  /* background-color: rgb(66, 72, 75); */
+  color: rgb(29, 34, 34);
+}
+#button {
+  background-color: rgb(46, 50, 53);
+  color: rgb(128, 124, 124);
+  font-size: large;
+  box-shadow: rgba(0, 0, 0, 0);
+  border: 0px solid rgb(33, 35, 36);
+  display: inline-block;
+}
+#Due,#item{
+  background-color: lightcoral;
+  border: 0mm;
 }

@@ -36,9 +36,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header  />
         <ItemAdder addItem={this.addItem} />
-        <List items={this.state.items} />
+        <List  items={this.state.items} />
       </div>
     );
   }

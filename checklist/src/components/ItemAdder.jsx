@@ -17,7 +17,7 @@ class ItemAdder extends React.Component {
   render() {
     const { item, Due } = this.state;
     return (
-      <form onSubmit={this.manageSubmit}>
+      <form className="App-itemsubmit" onSubmit={this.manageSubmit}>
         <label htmlFor="item">Item:</label>
         <input
           value={item}
@@ -32,7 +32,8 @@ class ItemAdder extends React.Component {
           type="date"
           onChange={this.handleChange}
         ></input>
-        <button>Add Item</button>
+        <br/>
+        <button id='button'>Add Item</button>
       </form>
     );
   }
